@@ -1,0 +1,65 @@
+[
+     {
+          "matchID": 1,
+          "team1": "",
+          "team2": "",
+          "matchDate": "",
+          "games": [
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               }
+          ],
+          "blueTeamG3": 1
+     },
+     {
+          "matchID": 2,
+          "team1": "",
+          "team2": "",
+          "matchDate": "",
+          "games": [
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               }
+          ],
+          "blueTeamG3": 1
+     },
+     {
+          "matchID": 3,
+          "team1": "",
+          "team2": "",
+          "matchDate": "",
+          "games": [
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               },
+               {
+                    "teamB": 1,
+                    "gameLink": ""
+               }
+          ],
+          "blueTeamG3": 1
+     },
+]
