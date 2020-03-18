@@ -8,7 +8,7 @@ class TitleContainer extends React.Component {
     render() {
         return(
                 <div className="col-md-12 text-center">
-                     <h1 className="text-center  display-3"><b>{this.props.title}</b></h1>
+                     <h1><b>{this.props.title}</b></h1>
                      <h4>{this.props.subtitle}</h4  >
                   </div>
         )

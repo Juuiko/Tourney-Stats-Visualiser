@@ -13,7 +13,7 @@ class PicButton extends Component {
 
 	setIsShown = (bool) => {
 		if (bool === true) {
-			this.setState({image: this.props.image2});
+			this.setState({image: this.props.imageHover});
 		}
           if (bool === false) {
                this.setState({image: this.props.image});
@@ -24,8 +24,9 @@ class PicButton extends Component {
 		return (
 
 			<div className="col-md-3 col-sm-6 p-3">
-				<Link to="/player-stats">
+				<Link to={this.props.link}>
 					<img
+                          className="shadow-lg rounded"
 	                     src={this.state.image}
 	                     onMouseEnter={() => this.setIsShown(true)}
 	                     onMouseLeave={() => this.setIsShown(false)}

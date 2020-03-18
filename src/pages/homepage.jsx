@@ -28,18 +28,18 @@ class HomePage extends Component {
         <div className="row">
         <ListGroup variant="flush" className="col-md-3 col-sm-6 p-3">
           <ListGroup.Item><h4><b>Weekly Games (16-22):</b></h4></ListGroup.Item>
-          <ListGroup.Item>Team 1 vs Team 2 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 3 vs Team 4 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 5 vs Team 6 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 7 vs Team 8 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 9 vs Team 10 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 11 vs Team 12 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 13 vs Team 14 : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team 15 vs Team 16 : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>HongFudge vs Corona Greens : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Niallation vs Clinto : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Arcαne's Angels vs Trihard Cappa : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Shooting Blanks vs Free Wins : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Team S+ Mid vs Yoh : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Dirty Pykey vs Crep : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>EsperBoss vs Duck Duck Chad : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>PutBaconOnVegan vs bgsCurtis : 0 - 0</ListGroup.Item>
          </ListGroup>
-         <PicButton image={Player} image2={PlayerHover}/>
-         <PicButton image={Champion} image2={ChampionHover}/>
-         <PicButton image={Team} image2={TeamHover}/>
+         <PicButton image={Player} imageHover={PlayerHover} link="/player-stats"/>
+         <PicButton image={Champion} imageHover={ChampionHover} link="/champ-stats" />
+         <PicButton image={Team} imageHover={TeamHover} link="/team-stats" />
        </div>
       </div>
     )
