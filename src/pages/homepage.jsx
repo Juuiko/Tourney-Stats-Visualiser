@@ -20,13 +20,13 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="container col-md-12">
+      <div className="container-fluid">
            <TitleContainer
              title="Welcome to the Quantex Captain's Draft Stats Homepage!"
              subtitle="A web app to visualise player, team & champion stats along the course of the tournament."
            ></TitleContainer>
         <div className="row">
-        <ListGroup variant="flush" className="col-md-3 col-sm-6 p-3">
+        <ListGroup variant="flush" className="col-md-3 p-3">
           <ListGroup.Item><h4><b>Weekly Games (22-29):</b></h4></ListGroup.Item>
           <ListGroup.Item>HongFudge vs Corona Greens : 0 - 0</ListGroup.Item>
           <ListGroup.Item>Niallation vs Clint's Angels : <span style={{color: 'green'}}>2</span> - <span style={{color: 'red'}}>0</span></ListGroup.Item>

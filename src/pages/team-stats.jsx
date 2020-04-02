@@ -1,111 +1,85 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CardDeck from 'react-bootstrap/CardDeck'
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import TitleContainer from '../components/title-container'
 import Card from '../components/chart-card'
-import Bar from '../components/bar-chart'
 import NavButton from '../components/nav-button'
-import CardDeck from 'react-bootstrap/CardDeck'
+import Data from '../media/teamStats.json'
 
 class TeamStats extends Component {
 
   render() {
     return (
       <div className="home">
-      <NavButton text="Home" link="/"></NavButton>
+      <Breadcrumb>
+        <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+        <Breadcrumb.Item active>Team Stats</Breadcrumb.Item>
+      </Breadcrumb>
 
-        <div className="row">
-           <TitleContainer
-             title="Team Statistics"
-             subtitle=""
-           ></TitleContainer>
-        </div>
-
-        <div className="deck-container">
-        <CardDeck className="deck">
-          <Card
-            title="KDA"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="kda"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Kills"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="kills"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Deaths"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="deaths"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Assists"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="assists"
-                fullGraph={false}
-              />
-            }
-          />
-          </CardDeck>
-          <CardDeck className="deck">
-          <Card
-            title="CS/M"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="csm"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Wins"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="wins"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Gold"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="gold"
-                fullGraph={false}
-              />
-            }
-          />
-          <Card
-            title="Average Length"
-            history={this.props.history}
-            graph={
-              <Bar
-                keys="averageLength"
-                fullGraph={false}
-              />
-            }
-          />
-        </CardDeck>
+        <div className="container-fluid">
+             <CardDeck className="deck">
+                    <Card
+                      title="KDA"
+                      history={this.props.history}
+                      graph="kda"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Kills"
+                      history={this.props.history}
+                      graph="kills"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Deaths"
+                      history={this.props.history}
+                      graph="deaths"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Assists"
+                      history={this.props.history}
+                      graph="assists"
+                      data={Data}
+                      index="teamName"
+                    />
+               </CardDeck>
+               <CardDeck className="deck">
+                    <Card
+                      title="CS/M"
+                      history={this.props.history}
+                      graph="csm"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Wins"
+                      history={this.props.history}
+                      graph="wins"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Gold"
+                      history={this.props.history}
+                      graph="gold"
+                      data={Data}
+                      index="teamName"
+                    />
+                    <Card
+                      title="Average Length"
+                      history={this.props.history}
+                      graph="averageLength"
+                      data={Data}
+                      index="teamName"
+                    />
+             </CardDeck>
         </div>
       </div>
     )
