@@ -23,16 +23,16 @@ class PicButton extends Component {
 	render() {
 		return (
 
-			<div className="col-md-3 col-sm-6 p-3">
+			<div className="col-md-2 col-sm-6 p-3">
 				<Link to={this.props.link}>
 					<img
-                          className="shadow-lg rounded"
 	                     src={this.state.image}
 	                     onMouseEnter={() => this.setIsShown(true)}
 	                     onMouseLeave={() => this.setIsShown(false)}
 	                     alt="link button"
 	                     style={{ width: '100%' }} />
 				 </Link>
+				 <p>{this.props.text}</p>
 		     </div>
 		);
 	}
