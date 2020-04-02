@@ -12,6 +12,7 @@ class GraphCard extends Component {
              margin={{ top: 0, right: 0, bottom: 30, left: 0 }}
              padding={0.3}
              colors={{ scheme: 'nivo' }}
+             colorBy="index"
              defs={[
                  {
                      id: 'dots',
@@ -46,7 +47,7 @@ class GraphCard extends Component {
 
   render() {
     return (
-      <Card onClick={this.onClick} tag="a" className="graph-card" style={{ height: '450px' }}>
+      <Card onClick={this.onClick} tag="a" className="graph-card" style={{height: '440px'}}>
         <Card.Body>
           <Card.Title className="card-title">{this.props.title}</Card.Title>
           {this.MyResponsiveBar(this.props.data)}
@@ -56,7 +57,7 @@ class GraphCard extends Component {
   }
 
   onClick = () => {
-    this.state.props.push("fullscreen-graph")
+    this.props.history.push(this.props.fullscreen)
   }
 }
 

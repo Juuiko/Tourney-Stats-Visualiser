@@ -13,7 +13,7 @@ class TeamStats extends Component {
 
   render() {
     return (
-      <div className="home">
+      <div className="home" style={{height: '100vh'}}>
       <Breadcrumb>
         <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Team Stats</Breadcrumb.Item>
@@ -27,6 +27,7 @@ class TeamStats extends Component {
                       graph="kda"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Kills"
@@ -34,6 +35,7 @@ class TeamStats extends Component {
                       graph="kills"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Deaths"
@@ -41,6 +43,7 @@ class TeamStats extends Component {
                       graph="deaths"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Assists"
@@ -48,6 +51,7 @@ class TeamStats extends Component {
                       graph="assists"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                </CardDeck>
                <CardDeck className="deck">
@@ -57,6 +61,7 @@ class TeamStats extends Component {
                       graph="csm"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Wins"
@@ -64,6 +69,7 @@ class TeamStats extends Component {
                       graph="wins"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Gold"
@@ -71,6 +77,7 @@ class TeamStats extends Component {
                       graph="gold"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
                     <Card
                       title="Average Length"
@@ -78,6 +85,7 @@ class TeamStats extends Component {
                       graph="averageLength"
                       data={Data}
                       index="teamName"
+                      fullscreen="/team-stats/fullscreen"
                     />
              </CardDeck>
         </div>

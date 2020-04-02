@@ -17,6 +17,7 @@ class PlayerStats extends Component {
       <Breadcrumb>
         <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Player Stats</Breadcrumb.Item>
+        <Breadcrumb.Item><Link to="/player-stats/list">OP.GGs</Link></Breadcrumb.Item>
       </Breadcrumb>
 
         <div className="container-fluid">
@@ -27,6 +28,7 @@ class PlayerStats extends Component {
            graph="kda"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Kills"
@@ -34,6 +36,7 @@ class PlayerStats extends Component {
            graph="kills"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Deaths"
@@ -41,6 +44,7 @@ class PlayerStats extends Component {
            graph="deaths"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Assists"
@@ -48,6 +52,7 @@ class PlayerStats extends Component {
            graph="assists"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           </CardDeck>
           <CardDeck className="deck">
@@ -57,6 +62,7 @@ class PlayerStats extends Component {
            graph="csm"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="DP/M"
@@ -64,6 +70,7 @@ class PlayerStats extends Component {
            graph="dpm"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="VS/M"
@@ -71,6 +78,7 @@ class PlayerStats extends Component {
            graph="vsm"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Kill Part"
@@ -78,6 +86,7 @@ class PlayerStats extends Component {
            graph="killPart"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Multi Kills"
@@ -85,6 +94,7 @@ class PlayerStats extends Component {
            graph="killPart"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
           <Card
            title="Gold Share"
@@ -92,6 +102,7 @@ class PlayerStats extends Component {
            graph="goldShare"
            data={Data}
            index="playerName"
+           fullscreen="/player-stats/fullscreen"
           />
         </CardDeck>
         </div>
