@@ -109,7 +109,7 @@ class Container extends Component {
 				 </ListGroup>
 			    </Col>
 			    <Col md={8} sm={12}>
-					<iframe title="OPGG window" src={this.state.opgg} width="100%" height="800" frameborder="0"></iframe>
+					<iframe title="OPGG window" src={this.state.opgg} width="100%" height="800" frameBorder="0"></iframe>
 			    </Col>
 			  </Row>
 			</Tab.Container>

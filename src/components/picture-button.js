@@ -23,7 +23,7 @@ class PicButton extends Component {
 	render() {
 		return (
 
-			<div className="col-md-2 col-sm-6 p-3">
+			<div className="col-md-3 col-sm-6 p-3">
 				<Link to={this.props.link}>
 					<img
 	                     src={this.state.image}

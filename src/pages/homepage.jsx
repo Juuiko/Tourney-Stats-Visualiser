@@ -40,7 +40,6 @@ class HomePage extends Component {
          <PicButton image={Player} imageHover={PlayerHover} text="Player Stats" link="/player-stats"/>
          <PicButton image={Champion} imageHover={ChampionHover} text="Champ Stats" link="/champ-stats" />
          <PicButton image={Team} imageHover={TeamHover} text="Team Stats" link="/team-stats" />
-         <iframe title="Quantex Invite Link" src="https://discordapp.com/widget?id=355066343587840010&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
        </div>
       </div>
     )

@@ -1,26 +1,20 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import TitleContainer from '../components/title-container'
-import NavButton from '../components/nav-button'
-//import Data from '../media/data.json'
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
-class HomePage extends Component {
+class ChampStats extends Component {
   render() {
     return (
       <div className="ChampStats">
-      <NavButton text="Home" link="/"></NavButton>
-        <div className="row">
-           <TitleContainer
-             title="Sorry, come back soon!"
-             subtitle="The tournament has to start for stats to work :)"
-           ></TitleContainer>
-        </div>
-        <div>
-        </div>
+      <Breadcrumb>
+        <Breadcrumb.Item active><Link to="/">Home</Link></Breadcrumb.Item>
+        <Breadcrumb.Item active>Champ Stats</Breadcrumb.Item>
+      </Breadcrumb>
       </div>
     )
   }
 }
 
-export default HomePage
+export default ChampStats

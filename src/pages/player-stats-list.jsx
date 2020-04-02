@@ -11,8 +11,8 @@ class HomePage extends Component {
     return (
      <div>
           <Breadcrumb>
-            <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
-            <Breadcrumb.Item><Link to="/player-stats">Player Stats</Link></Breadcrumb.Item>
+            <Breadcrumb.Item active><Link to="/">Home</Link></Breadcrumb.Item>
+            <Breadcrumb.Item active><Link to="/player-stats">Player Stats</Link></Breadcrumb.Item>
             <Breadcrumb.Item active>OP.GGs</Breadcrumb.Item>
           </Breadcrumb>
            <div className="container-fluid">

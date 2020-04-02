@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-import TitleContainer from '../components/title-container'
 import Card from '../components/chart-card'
-import NavButton from '../components/nav-button'
 import Data from '../media/playerStats.json'
 
 class PlayerStats extends Component {
@@ -15,9 +13,9 @@ class PlayerStats extends Component {
     return (
       <div className="home">
       <Breadcrumb>
-        <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+        <Breadcrumb.Item active><Link to="/">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Player Stats</Breadcrumb.Item>
-        <Breadcrumb.Item><Link to="/player-stats/list">OP.GGs</Link></Breadcrumb.Item>
+        <Breadcrumb.Item active><Link to="/player-stats/list">OP.GGs</Link></Breadcrumb.Item>
       </Breadcrumb>
 
         <div className="container-fluid">

@@ -47,7 +47,7 @@ class GraphCard extends Component {
 
   render() {
     return (
-      <Card onClick={this.onClick} tag="a" className="graph-card" style={{height: '440px'}}>
+      <Card onClick={this.onClick} className="graph-card" style={{height: '440px'}}>
         <Card.Body>
           <Card.Title className="card-title">{this.props.title}</Card.Title>
           {this.MyResponsiveBar(this.props.data)}
@@ -57,7 +57,15 @@ class GraphCard extends Component {
   }
 
   onClick = () => {
-    this.props.history.push(this.props.fullscreen)
+       this.props.history.push({
+       pathname: this.props.fullscreen,
+       state: {
+            title: this.props.title,
+            data: this.props.data,
+            keys: this.props.graph,
+            index: this.props.index
+       }
+     })
   }
 }
 

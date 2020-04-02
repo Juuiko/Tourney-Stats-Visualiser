@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-import TitleContainer from '../components/title-container'
 import Card from '../components/chart-card'
-import NavButton from '../components/nav-button'
 import Data from '../media/teamStats.json'
 
 class TeamStats extends Component {
@@ -15,7 +13,7 @@ class TeamStats extends Component {
     return (
       <div className="home" style={{height: '100vh'}}>
       <Breadcrumb>
-        <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+        <Breadcrumb.Item active><Link to="/">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Team Stats</Breadcrumb.Item>
       </Breadcrumb>
 
