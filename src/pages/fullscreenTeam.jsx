@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { ResponsiveBar } from '@nivo/bar'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-import Card from 'react-bootstrap/Card'
 
 class Fullscreen extends Component {
 
@@ -15,7 +14,7 @@ class Fullscreen extends Component {
              indexBy={this.props.location.state.index}
              margin={{ top: 10, right: 0, bottom: 30, left: 30 }}
              padding={0.3}
-             colors={{ scheme: 'nivo' }}
+             colors={{ scheme: 'set3' }}
              colorBy="index"
              borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
              axisTop={null}
