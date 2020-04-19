@@ -27,15 +27,15 @@ class HomePage extends Component {
            ></TitleContainer>
         <div className="row">
         <ListGroup variant="flush" className="col-md-3 p-3">
-          <ListGroup.Item><h4><b>Weekly Games (22-29):</b></h4></ListGroup.Item>
-          <ListGroup.Item>HongFudge vs Corona Greens : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Niallation vs Clint's Angels : <span style={{color: 'green'}}>2</span> - <span style={{color: 'red'}}>0</span></ListGroup.Item>
-          <ListGroup.Item>Arcαne's Angels vs Trihard Cappa : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Shooting Blanks vs Free Wins : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Team S+ Mid vs Yoh : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>Dirty Pykey vs Crep : <span style={{color: 'green'}}>2</span> - <span style={{color: 'red'}}>0</span></ListGroup.Item>
-          <ListGroup.Item>EsperBoss vs Duck Duck Chad : 0 - 0</ListGroup.Item>
-          <ListGroup.Item>PutBaconOnVegan vs bgsCurtis : <span style={{color: 'green'}}>2</span> - <span style={{color: 'red'}}>0</span></ListGroup.Item>
+          <ListGroup.Item><h4><b>Weekly Games (30-05):</b></h4></ListGroup.Item>
+          <ListGroup.Item>HongFudge vs Clint's Angels : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Corona Greens vs Niallation : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Arcαne's Angels vs Free Wins : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Trihard Cappa vs Shooting Blanks : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Team S+ Mid vs Crep : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Yoh vs Dirty Pykey : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>EsperBoss vs Resolve : 0 - 0</ListGroup.Item>
+          <ListGroup.Item>Duck Duck Chad vs PutBaconOnVegan : 0 - 0</ListGroup.Item>
          </ListGroup>
          <PicButton image={Player} imageHover={PlayerHover} text="Player Stats" link="/player-stats"/>
          <PicButton image={Champion} imageHover={ChampionHover} text="Champ Stats" link="/champ-stats" />
